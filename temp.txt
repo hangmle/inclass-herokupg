@@ -1,0 +1,19 @@
+psql postgres://postgres:uLEQvctjF3uasjZUTXZ08dH7e6Lp0jrwNueTWiM9Klh57TO1SSZxHvw7ng7VI98L@p.c4brzk7xtjaqbezfgsxsw2pity.db.postgresbridge.com:5432/postgres
+
+
+-- Drop table
+DROP TABLE TESTTABLE;
+
+-- Create table
+CREATE TABLE TESTTABLE (
+ID     SERIAL PRIMARY KEY,
+FNAME  VARCHAR(10),
+LNAME  VARCHAR(15)
+);
+
+-- Insert data
+INSERT INTO TESTTABLE (FNAME, LNAME) VALUES
+('Amy', 'Andrews'),
+('Bob', 'Barns'),
+('Cindy', 'Chase'),
+('Dave', 'Dunn');
